@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input {
+            width: 150px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 150px;
+        }
+        td {
+          border-bottom: 1px solid #dddddd;
+        }
+        .right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+<input type="text" id='task' onkeydown="addTask(event)" onkeyup="fuzzySearch()"/>
+<table id="taskList">
+    <tr>
+        <td class="content">eat</td>
+        <td class="right" value="eat" onclick="deleteTask()">x</td>
+    </tr>
+</table>
+
+<script>
+    const input = document.getElementById('task')
+
+    function addTask(event) {
+        //var input = document.getElementById('task')
+        var taskContent = input.value;
+        var tasklist = document.getElementById('taskList');
+         if(event.key == 'Enter'){
+             var tr = document.createElement('tr');
+             var tdLeft = document.createElement('td');
+             var tdRight = document.createElement('td');
+             tdLeft.innerText = taskContent;
+             tdLeft.setAttribute('class','content')
+             tdRight.innerText = 'x';
+             tdRight.setAttribute('class','right');
+             tdRight.setAttribute('onclick','deleteTask()')
+             tr.appendChild(tdLeft);
+             tr.appendChild(tdRight);
+             tasklist.appendChild(tr);
+             input.value = ''
+         }
+    }
+
+    function fuzzySearch() {
+        //var input = document.getElementById('task')
+        var taskContent = input.value;
+        var contents = document.querySelectorAll('td.content')
+        contents.forEach(function (item) {
+            //console.log(item.innerText)
+            var match = item.innerText.includes(taskContent);
+            //console.log(match)
+            if (match == false){
+                //console.log(item.parentElement)
+                item.parentElement.style.display = 'none';
+            }
+            else {
+                // table-row!!!!!!!!!!! not inline, block, inline-block or anything else!!! T_T
+                item.parentElement.style.display = 'table-row';
+            }
+        })
+    }
+
+    function deleteTask() {
+        var tasklist = document.getElementById('taskList');
+        var tdRight = event.target;
+        //console.log(tdRight);
+        //console.log(tdRight.parentElement)
+        tdRight.parentElement.remove()
+    }
+</script>
+
+</body>
+</html>
