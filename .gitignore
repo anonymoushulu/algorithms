@@ -1,0 +1,4 @@
+#for images
+*.png
+#for ./idea folder
+/.idea
