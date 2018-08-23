@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // 1. 点击某个节点元素，则该节点元素呈现一个特殊被选中的样式
+        // 思路：给body或者父div写个事件委托
+        // 2. 增加一个删除按钮，当选中某个节点元素后，点击删除按钮，则将该节点及其所有子节点删除掉
+        // 思路：点击后删除事件所在元素，和它的children
+        // 3. 增加一个输入框及一个“添加”按钮当选中某个节点元素后，点击增加按钮，则在该节点下增加一个子节点，节点内容为输入框中内容，插入在其子节点的最后一个位置
+        // 思路：点击后对事件所在元素.appendChild()
+    </script>
+</head>
+<body>
+
+    <script>
+        // 事件委托：要给多个元素添加事件监听时，事件委托是个好办法，for example：
+        window.onload = function(){
+            var ul = document.getElementById('ul'); // 绑定父级元素
+            ul.onclick = function(e){ // 绑定事件，此处为绑定click事件
+                e = window.event ? window.event :e; // 捕获事件
+                // 捕获事件触发所在元素。此处用到了Event对象的target属性，该属性能够获取事件发生所在的元素;
+                // 而currentTarget一般指向事件的父级对象！
+                var who = e.target ? e.target : e.secElement;
+                console.log(who.innerHTML); // 打印事件触发所在的元素的文本
+                $(who).css('color','red'); // 修改样式
+            }
+        }
+        $('#sub').click(function(){
+            var length = $('#ul li').length;
+            var list = '<li> ' + length + ' </li>';
+            $('#ul').append(list);
+        })
+
+    </script>
+</body>
+</html>

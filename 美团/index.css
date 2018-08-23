@@ -1,0 +1,81 @@
+/* checkbox复选框，radio单选框*/
+
+/*伪元素方法实现*/
+.checkbox{
+    margin-bottom: 30px;
+    /*normal is 400, bold is 700*/
+    font-weight: 700;
+}
+/*
++的意思：div+p   选择紧接在 <div> 元素之后的所有 <p> 元素
+,的意思：div,p	选择所有 <div> 元素和所有 <p> 元素。
+: 伪类
+:: 伪元素
+*/
+.checkBox+label,.radios+label{
+    width:16px;
+    height: 16px;
+    border:1px solid #d9d9d9;
+    display: -webkit-flex;
+    display:flex;
+}
+.checkBox:checked+label,.radios:checked+label{
+    border:1px solid #d73d32;
+    font-weight: 700;
+}
+.checkBox:checked+label::after,.radios:checked+label::after{
+    margin: auto;
+    content: '\2714';
+    color: red;
+    width:8px;
+    height:8px;
+    line-height: 8px;
+    text-align: center;
+    font-size: 12px;
+}
+/* 隐藏原生input标签，使用label，并且给之加样式来实现自定义控件 */
+input{
+    margin:0;
+    display: none;
+}
+
+/* radio */
+.radio{
+    display: -webkit-flex;
+    display: flex;
+    width: 50px;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.radios+label{
+    border-radius: 50%;
+}
+.radios:checked+label::after{
+    border-radius: 50%;
+    width:8px;
+    height:8px;
+    line-height: 8px;
+    content: ' ';
+    background: #d73d32;
+}
+
+/*雪碧图方法实现*/
+.checkBox_sprit+label,.radioBox_sprit+label{
+    width: 16px;
+    height:16px;
+    border:none;
+    display: inline-block;
+    background:url('bg.png') no-repeat;
+}
+.checkBox_sprit+label{
+    background-position:-25px -32px;
+}
+.radioBox_sprit+label{
+    background-position: -24px -10px;
+}
+.checkBox_sprit:checked+label{
+    background-position: -60px -32px;
+}
+.radioBox_sprit:checked+label{
+    background-position: -59px -10px;
+}

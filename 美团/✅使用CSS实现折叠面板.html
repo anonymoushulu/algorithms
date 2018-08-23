@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // 这个我在我的WikiLatic-Angular项目里面实现过类似功能
+        // 因为整个项目用Bootstrap4,而折叠面板是Bootstrap3，而且Bootstrap3的例子<a href='#'>在Angular里不行，所以只能自己实现。
+        // 主要依靠
+        // <div class="card" *ngFor="let article of authorArticles" (click)="toggleDetails(article.title)">
+        // <span *ngIf="article.show">
+        // <li *ngFor="let time of article.timestamp">{{time}}</li>
+        // 成功实现了折叠面板
+    </script>
+</body>
+</html>

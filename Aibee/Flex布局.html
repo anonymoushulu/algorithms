@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex display</title>
+    <style>
+        .parent{
+            display: flex;
+        }
+        .left{
+            margin-right: 20px;
+            background-color: red;
+        }
+        .right{
+            flex: 1;
+            background-color: green;
+        }
+        .left p{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="left">
+        <p>left</p>
+    </div>
+    <div class="right">
+        <p>right</p>
+        <p>right</p>
+    </div>
+</div>
+</body>
+</html>

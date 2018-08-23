@@ -1,4 +1,6 @@
-let a = [1,2,3,undefined];
-
-a.splice(0,0,1)
-console.log(a)
+let a = [];
+a.num = 1;
+function change(){
+    this.num = 3;
+}
+console.log(a.change)

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div contextmenu="mymenu" >
+        <div class="context">此菜单区域只在firefox有效</div>
+        <menu id="mymenu" type="context">
+            <menuitem label="项目1"></menuitem>
+            <menuitem label="项目2"></menuitem>
+            <menu label="项目3">
+                <menuitem label="项目3.1"></menuitem>
+                <menuitem label="项目3.2"></menuitem>
+            </menu>
+        </menu>
+    </div>
+
+    <div class="menu context">这里还有一个菜单，所有浏览器有效</div>
+
+    <div id="supermenu" style="display: none;">
+        <ul>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // contextmenu事件法。或者用mousedown事件，e.button===2也可以识别右键点击
+        /*//原生实现jQuery选择器
+        $=function(element){
+            return document.querySelectorAll(element);
+        }*/
+        var mymenu=document.getElementById("supermenu");
+
+        //监听contextmenu（鼠标右键）事件，这个事件是冒泡的，所以给document加监听也可以
+        for(var i=0;i<$(".menu").length;i++){
+            $(".menu")[i].addEventListener("contextmenu",function(e){
+                e.preventDefault();//阻止原有的菜单
+                e.returnValue=false;//在IE中阻止原有的菜单
+
+                mymenu.style.cssText='display: block;'; //先显示后才能获取menu的高宽
+                var menuwidth=mymenu.offsetWidth;//获取自定义菜单的高宽
+                var menuheight=mymenu.offsetHeight;
+                var clientwidth=document.documentElement.clientWidth;//获取当前可视窗口的高宽
+                var clientheight=document.documentElement.clientHeight;
+                if(clientheight-e.pageY>=menuheight){ //底下有足够空间时
+                    mymenu.style.top=e.pageY+"px";//菜单在下方
+                }else{
+                    mymenu.style.top=(e.pageY-menuheight)+"px";
+                }
+                if(clientwidth-e.pageX>=menuwidth){ //右边有足够空间
+                    mymenu.style.left=e.pageX+"px";//菜单有右边
+                }else{
+                    mymenu.style.left=(e.pageX-menuwidth)+"px";
+                }
+                console.log(clientheight-e.pageY,clientwidth-e.pageX);
+            })
+            document.body.addEventListener("click",function(e){ //点击其他地方菜单消失，可恢复默认的菜单事件
+                mymenu.style.cssText='display: none;';
+            })
+        }
+    </script>
+
+</body>
+</html>

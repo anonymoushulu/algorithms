@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #main {
+            width: 600px;
+            height: 200px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+<input id='data' type="number" min="10" max="100" style="width: 100px;">
+<button onclick="leftIn()">左侧入</button>
+<button onclick="rightIn()">右侧入</button>
+<button onclick="leftOut()">左侧出</button>
+<button onclick="rightOut()">右侧出</button>
+
+<div id="main">
+    <canvas id="myCanvas" width="600" height="100"> </canvas>
+</div>
+
+<script>
+    const input = document.getElementById('data');
+    var dataArr = [];
+
+    function leftIn() {
+        let data = input.value;
+        if (data>=10 && data<=100 && dataArr.length<60){
+            dataArr.unshift(data);
+            bubbleSort(dataArr);
+        } else {
+            alert('error');
+        }
+    }
+    function rightIn() {
+        let data = input.value;
+        if (data>=10 && data<=100 && dataArr.length<60) {
+            dataArr.push(data);
+            bubbleSort(dataArr);
+        } else {
+            alert('error');
+        }
+    }
+    function leftOut() {
+        dataArr.shift();
+        bubbleSort(dataArr);
+    }
+    function rightOut() {
+        dataArr.pop();
+        bubbleSort(dataArr);
+    }
+
+    function bubbleSort(arr) {
+
+        function draw(arr) {
+            let canvas = document.getElementById('myCanvas');
+            let ctx = canvas.getContext('2d');
+            let maxHeight = canvas.height;
+            let width = 20;
+            let space = 20;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.font = "18px serif";
+            for (let i = 0; i < arr.length; i++) {
+                ctx.fillStyle = 'red';
+                ctx.fillRect(i * (width + space), maxHeight - arr[i], width, arr[i]);
+                ctx.fillStyle = 'black';
+                ctx.fillText(arr[i], i * (width + space), maxHeight - arr[i]);
+            }
+        }
+
+        function sort() {
+            //此处关键，必须用arr.slice();
+            let virtualArr = [arr.slice()];
+            let max = arr.length;
+            for (let i = 0; i < max; i++) {
+                let done = true;
+                for (let j = 0; j < max - i; j++) {
+                    if (arr[j] > arr[j + 1]) {
+                        let temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                        done = false;
+                        //此处关键，用arr不行，用arr.slice()就可以。
+                        virtualArr.push(arr.slice());
+                    }
+                }
+                if (done) {
+                    break;
+                }
+            }
+            return virtualArr;
+        }
+
+        function animation() {
+            let virtualArr = sort();
+            let interval = 500;
+            virtualArr.forEach((item, index) => {
+                setTimeout(() => draw(item), index * interval);
+            });
+        }
+        animation();
+    }
+
+</script>
+</body>
+</html>

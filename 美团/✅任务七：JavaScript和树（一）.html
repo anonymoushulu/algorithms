@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3px 1px;
+            border: 1px solid black;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="preOrder()">前序遍历</button>
+    <button onclick="inOrder()">中序遍历</button>
+    <button onclick="postOrder()">后序遍历</button>
+    <div id="tree"></div>
+
+    <script>
+        // 用BFS画出一层又一层的矩形
+        (function () {
+            var queue = [];
+            var root = document.getElementById('tree');
+            var width = 600;
+            var height = 200;
+            root.style.height = height + 'px';
+            root.style.width = width + 'px';
+            queue.push(root);
+            let n = 2;
+            let i = 0;
+            while (i < 2**(n+1)-1){
+                let parent = queue[0];
+                queue.shift();
+                let child1 = document.createElement('div');
+                child1.style.height = parseInt(parent.style.height) / 2 + 'px';
+                child1.style.width = parseInt(parent.style.width)/2-6 + 'px';
+                let child2 = document.createElement('div');
+                child2.style.height = parseInt(parent.style.height) / 2 + 'px';
+                child2.style.width = parseInt(parent.style.width)/2-6 + 'px';
+                parent.appendChild(child1);
+                parent.appendChild(child2);
+                queue.push(child1);
+                queue.push(child2);
+                i++;
+            }
+        })();
+
+        var node = document.getElementById('tree');
+        function preOrder() {
+            let nodeArr = [];
+            function traverse(node){
+                if(node!=null) {
+                    nodeArr.push(node);
+                    traverse(node.firstElementChild);
+                    traverse(node.lastElementChild);
+                }
+            };
+            traverse(node);
+            animation(nodeArr);
+        }
+
+        function inOrder() {
+            let inOrderArr = [];
+            function inOrderTrav(node){
+                if(node!=null) {
+                    inOrderTrav(node.firstElementChild);
+                    inOrderArr.push(node);
+                    inOrderTrav(node.lastElementChild);
+                }
+            };
+            inOrderTrav(node);
+            animation(inOrderArr);
+        }
+
+        function postOrder() {
+            let nodeArr = [];
+            function traverse(node){
+                if(node!=null) {
+                    traverse(node.firstElementChild);
+                    traverse(node.lastElementChild);
+                    nodeArr.push(node);
+                }
+            };
+            traverse(node);
+            animation(nodeArr);
+        }
+        
+        function animation(nodesArr) {
+            for (let i=0;i<nodesArr.length;i++){
+                setTimeout((function(num){
+                    return function() {
+                        if(num-1 >= 0) {
+                            nodesArr[num-1].style.backgroundColor = "white";
+                        }
+                        nodesArr[num].style.backgroundColor = "blue";
+                    }
+                })(i), i*1000);
+            }
+        }
+    </script>
+</body>
+</html>

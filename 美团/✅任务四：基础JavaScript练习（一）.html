@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+    <style>
+        .redBox {
+            background-color: red;
+            color: white;
+            margin-right: 5px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <input id="num" type="number">
+    <button onclick="leftIn()">左侧入</button>
+    <button onclick="rightIn()">右侧入</button>
+    <button onclick="leftOut()">左侧出</button>
+    <button onclick="rightOut()">右侧出</button>
+    <div id="content"></div>
+<script type="text/javascript">
+    function leftIn() {
+        let input = document.getElementById('num');
+        let div = document.createElement('div');
+        let contentArea = document.getElementById('content');
+        div.innerHTML = input.value;
+        div.setAttribute('class','redBox');
+        contentArea.insertBefore(div,contentArea.firstChild);
+    }
+
+    function rightIn() {
+        let input = document.getElementById('num');
+        let div = document.createElement('div');
+        let contentArea = document.getElementById('content');
+        div.innerHTML = input.value;
+        div.setAttribute('class','redBox');
+        contentArea.appendChild(div);
+    }
+
+    function leftOut() {
+        let contentArea = document.getElementById('content');
+        let child = contentArea.firstChild;
+        let text = child.innerHTML;
+        contentArea.removeChild(child);
+        alert(text);
+    }
+
+    function rightOut() {
+        let contentArea = document.getElementById('content');
+        let child = contentArea.lastChild;
+        alert(child.innerHTML);
+        contentArea.removeChild(child);
+    }
+
+    document.querySelector('body').addEventListener('click', function(event) {
+        if (event.target.className === 'redBox') {
+            let area = document.getElementById('content');
+            area.removeChild(event.target);
+        }
+    });
+</script>
+</body>
+</html>
