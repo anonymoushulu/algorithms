@@ -1,6 +1,4 @@
-let a = [];
-a.num = 1;
-function change(){
-    this.num = 3;
-}
-console.log(a.change)
+let b = 0;
+let a = b;
+a = null;
+console.log(b)
