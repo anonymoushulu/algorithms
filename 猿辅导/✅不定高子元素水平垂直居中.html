@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* flex布局 */
+        .box1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        /* table-cell */
+        .box2 {
+            display: table-cell; /*必须*/
+            text-align: center;
+            vertical-align: middle;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        /* css3 transform */
+        .box3 {
+            position: relative; /*必须*/
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        .center {
+            position: absolute; /*必须，相对父元素的绝对定位*/
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%); /*相对自己左上角平移*/
+        }
+    </style>
+</head>
+<body>
+    <div class='box1'>
+        <div>123</div>
+    </div>
+    <div class='box2'>
+        <div>123</div>
+    </div>
+    <div class='box3'>
+        <div class="center">123</div>
+    </div>
+</body>
+</html>

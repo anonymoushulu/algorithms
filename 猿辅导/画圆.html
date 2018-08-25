@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8"> 
+    <title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+
+<canvas id="myCanvas"></canvas>
+
+<script>
+
+    let c=document.getElementById("myCanvas");
+    let ctx=c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95,50,40,0,2*Math.PI); //x,y,r,start,end
+    ctx.fill(); //填充
+    ctx.stroke() //描边
+
+</script>
+
+</body>
+</html>

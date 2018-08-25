@@ -1,4 +1,2 @@
-let b = 0;
-let a = b;
-a = null;
-console.log(b)
+let a = ['5','3','0'];
+console.log(a.includes(5+''))
