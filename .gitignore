@@ -1,4 +1,9 @@
-#for images
 *.png
-#for ./idea folder
-/.idea
+/.idea/
+/node_modules/
+/package.json
+/package-lock.json
+
+!*.js
+!*.html
+!*.css

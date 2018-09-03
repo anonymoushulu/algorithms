@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="test">
+        <p></p>
+        <p></p>
+    </div>
+
+    <script>
+        function querySelectAllChildren(dom, p_callback){
+            let children = dom.children;
+            children = Array.prototype.slice.call(children); //伪数组转数组
+            children.map(child => p_callback(child));
+        }
+
+        let dom = document.getElementById('test');
+
+        querySelectAllChildren(dom,function (child) {
+            child.innerHTML = 'hireMe'
+        });
+    </script>
+</body>
+</html>

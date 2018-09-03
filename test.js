@@ -1,2 +1,2 @@
-let a = ['5','3','0'];
-console.log(a.includes(5+''))
+let a = 'abc'
+console.log(a.substring(0,3))
