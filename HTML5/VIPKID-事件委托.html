@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>无序列表</ul>
+</body>
+<script>
+    let ul = document.getElementsByTagName('ul')[0];
+    for (let i=0;i<10;i++){
+        let li = document.createElement('li');
+        li.innerHTML = (i+1).toString();
+        ul.appendChild(li)
+    }
+    ul.addEventListener('click',function (e) {
+        alert(e.target.innerHTML);
+    })
+</script>
+</html>

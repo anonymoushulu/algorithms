@@ -1,2 +1,4 @@
-let a = 'abc'
-console.log(a.substring(0,3))
+let a = [];
+if (a.length) {
+    console.log('1')
+}

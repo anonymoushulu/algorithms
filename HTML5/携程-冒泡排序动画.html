@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #parent{
+            width: 600px;
+            height: 100px;
+        }
+        .child {
+            margin: 5px 5px;
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="parent"></div>
+<button onclick="sortAnimation()">点击开始冒泡排序动画</button>
+
+<script>
+    let arr = [0,3,5,4,2,7,8,1,9,3];
+
+    (function (arr) {
+        render(arr);
+    })(arr);
+
+    // 绘制一个数组
+    function render(arr) {
+        let parent = document.getElementById('parent');
+        parent.innerHTML = '';
+        for (let i=0;i<arr.length;i++){
+            let child = document.createElement('div');
+            child.classList.add('child');
+            child.innerHTML = arr[i].toString();
+            parent.appendChild(child);
+        }
+    }
+
+    // 获取冒泡排序的所有帧
+    function getAllArrays(arr) {
+        let temp;
+        let results = [];
+        for(let i=0;i<arr.length;i++){
+            for(let j=0;j<arr.length-i-1;j++){
+                if(arr[j] > arr[j+1]){
+                    temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                    results.push([...arr]);
+                }
+            }
+        }
+        console.log(results)
+        return results;
+    }
+
+    // 动画：每秒显示一帧
+    function sortAnimation() {
+        let allArrays = getAllArrays(arr);
+        for (let i=0;i<allArrays.length;i++){
+            setTimeout(function () {
+                render(allArrays[i])
+            },i*2000)
+        }
+    }
+</script>
+</body>
+</html>
