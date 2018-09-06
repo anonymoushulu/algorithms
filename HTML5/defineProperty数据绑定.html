@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="test" type="text" onkeyup="changeData(this.value)"/>
+<script>
+    let data = {
+        val: 0
+    };
+
+    function changeData(val) {
+        data.val = val;
+    }
+
+    Object.keys(data).forEach(function (key) {
+        Object.defineProperty(data,key,{
+            enumerable: true,
+            configurable: true,
+            get: function () {
+                console.log('get')
+            },
+            set: function (newVal) {
+                console.log(newVal);
+                changeView(newVal);
+            }
+        })
+    })
+
+    data.val = 1205;
+
+    function changeView(val) {
+        document.getElementById('test').value = val;
+    }
+</script>
+</body>
+</html>

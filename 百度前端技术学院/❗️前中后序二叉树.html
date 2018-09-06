@@ -53,7 +53,8 @@
         function preOrder() {
             let nodeArr = [];
             function traverse(node){
-                if(node!=null) {
+                if(!node) return
+                else {
                     nodeArr.push(node);
                     traverse(node.firstElementChild);
                     traverse(node.lastElementChild);

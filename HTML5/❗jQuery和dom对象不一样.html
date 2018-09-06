@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="test"></div>
+    <script>
+        let div1 = $('#test');
+        div1.html('Hello World');
+        let div = document.getElementById('test');
+        $(div).html('dom to jq') // dom to jq
+        let div2 = div1[0];
+        div2.innerHTML = 'jq to dom'; // jq to dom method 1
+        let div3 = div1.get(0);
+        div3.innerHTML = 'jq to dom2' // jq to dom method 2
+    </script>
+</body>
+</html>

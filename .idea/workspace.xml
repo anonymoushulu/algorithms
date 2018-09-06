@@ -2,23 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94e53c97-6093-43ab-8334-4a0c68bf095c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/HTML5/VIPKID-Cookie.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/VIPKID-事件委托.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/内联元素定义宽高.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/携程-冒泡排序动画.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/字符串操作/VIPKID-URL参数打印.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/字符串操作/携程-判断ip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/字符串操作/青颖飞帆-B是否全在A.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数学/青颖飞帆-丑数.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数组/✅青颖飞帆-超过一半的元素.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数组/携程-排序动画.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数组/携程-素数和.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/递归/青颖飞帆-sum相等的所有组合.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML5/defineProperty数据绑定.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML5/❗jQuery和dom对象不一样.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/函数式编程/柯里化.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/动态规划/(0,0)到(n,m)所有可能.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/字符串操作/0开头默认八进制.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/数组/并集交集差集.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/字符串操作/青颖飞帆-B是否全在A.js" beforeDir="false" afterPath="$PROJECT_DIR$/字符串操作/青颖飞帆-B是否全在A.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/百度前端技术学院/❗️前中后序二叉树.html" beforeDir="false" afterPath="$PROJECT_DIR$/百度前端技术学院/❗️前中后序二叉树.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,29 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="青颖飞帆-sum相等的所有组合.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/递归/青颖飞帆-sum相等的所有组合.js">
+      <file leaf-file-name="(0,0)到(n,m)所有可能.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/动态规划/(0,0)到(n,m)所有可能.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="青颖飞帆-B是否全在A.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/字符串操作/青颖飞帆-B是否全在A.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="✅青颖飞帆-超过一半的元素.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/数组/✅青颖飞帆-超过一半的元素.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="15">
+              <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -62,8 +37,8 @@
       <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="90">
+              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -91,19 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/字节跳动/笔试2/字节跳动大闯关.js" />
-        <option value="$PROJECT_DIR$/猿辅导/画圆.html" />
-        <option value="$PROJECT_DIR$/猿辅导/循环打印.js" />
-        <option value="$PROJECT_DIR$/猿辅导/判断排序二叉树.js" />
-        <option value="$PROJECT_DIR$/猿辅导/flattern.js" />
-        <option value="$PROJECT_DIR$/猿辅导/flattern数组展开.js" />
-        <option value="$PROJECT_DIR$/猿辅导/Promise.js" />
-        <option value="$PROJECT_DIR$/猿辅导/水平垂直居中.html" />
-        <option value="$PROJECT_DIR$/猿辅导/大数相加.js" />
-        <option value="$PROJECT_DIR$/猿辅导/✅大数相加.js" />
-        <option value="$PROJECT_DIR$/猿辅导/✅setTimeout循环打印.js" />
-        <option value="$PROJECT_DIR$/360/城市面积.html" />
-        <option value="$PROJECT_DIR$/地平线/数组.js" />
         <option value="$PROJECT_DIR$/用友/✅不定高子元素水平垂直居中.html" />
         <option value="$PROJECT_DIR$/好未来/掷骰子.js" />
         <option value="$PROJECT_DIR$/好未来/排列组合.js" />
@@ -139,8 +101,21 @@
         <option value="$PROJECT_DIR$/VIPKID-Cookie.html" />
         <option value="$PROJECT_DIR$/数学/青颖飞帆-丑数.js" />
         <option value="$PROJECT_DIR$/排列组合/青颖飞帆-sum相等的所有组合.js" />
-        <option value="$PROJECT_DIR$/字符串操作/青颖飞帆-B是否全在A.js" />
         <option value="$PROJECT_DIR$/数组/青颖飞帆-超过一半的元素.js" />
+        <option value="$PROJECT_DIR$/动态规划/n,m矩阵.js" />
+        <option value="$PROJECT_DIR$/百度前端技术学院/❗️前中后序二叉树.html" />
+        <option value="$PROJECT_DIR$/HTML5/❗jQuery和dom对象不一样.html" />
+        <option value="$PROJECT_DIR$/HTML5/数据双向绑定.html" />
+        <option value="$PROJECT_DIR$/HTML5/defineProperty数据绑定.html" />
+        <option value="$PROJECT_DIR$/数据结构/哈希表-数组去重.js" />
+        <option value="$PROJECT_DIR$/字符串操作/青颖飞帆-B是否全在A.js" />
+        <option value="$PROJECT_DIR$/字符串操作/console.log(037).js" />
+        <option value="$PROJECT_DIR$/字符串操作/0开头默认八进制.js" />
+        <option value="$PROJECT_DIR$/类.js" />
+        <option value="$PROJECT_DIR$/类/js执行顺序.js" />
+        <option value="$PROJECT_DIR$/函数式编程/柯里化.js" />
+        <option value="$PROJECT_DIR$/数组/并集交集差集.js" />
+        <option value="$PROJECT_DIR$/动态规划/(0,0)到(n,m)所有可能.js" />
         <option value="$PROJECT_DIR$/test.js" />
       </list>
     </option>
@@ -167,7 +142,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="821" />
@@ -187,6 +162,11 @@
             <path>
               <item name="2019校招笔面试汇总" type="b2602c69:ProjectViewProjectNode" />
               <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2019校招笔面试汇总" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="动态规划" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -233,37 +213,37 @@
     </option>
   </component>
   <component name="RunManager" selected="Node.js.test.js">
-    <configuration name="青颖飞帆-B是否全在A.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="青颖飞帆-B是否全在A.js" working-dir="$PROJECT_DIR$/字符串操作" />
-    <configuration name="✅青颖飞帆-超过一半的元素.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/数组/✅青颖飞帆-超过一半的元素.js" working-dir="$PROJECT_DIR$/数组" />
-    <configuration name="青颖飞帆-丑数.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="青颖飞帆-丑数.js" working-dir="$PROJECT_DIR$/数学" />
     <configuration name="携程-排序动画.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/数组/携程-排序动画.js" working-dir="$PROJECT_DIR$" />
-    <configuration name="青颖飞帆-sum相等的所有组合.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/递归/青颖飞帆-sum相等的所有组合.js" working-dir="$PROJECT_DIR$/排列组合" />
     <configuration name="BFS推箱子游戏.js" type="NodeJSConfigurationType" factoryName="Node.js" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/BFS&amp;DFS/BFS推箱子游戏.js" working-dir="$PROJECT_DIR$" />
     <configuration name="VIPKID-URL参数打印.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/字符串操作/VIPKID-URL参数打印.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="(0,0)到(n,m)所有可能.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="(0,0)到(n,m)所有可能.js" working-dir="$PROJECT_DIR$/动态规划" />
+    <configuration name="柯里化.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="柯里化.js" working-dir="$PROJECT_DIR$/函数式编程" />
+    <configuration name="并集交集差集.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="并集交集差集.js" working-dir="$PROJECT_DIR$/数组" />
     <configuration name="快派.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="快派.js" working-dir="$PROJECT_DIR$/排序算法" />
     <configuration name="二分搜索算法.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/数据结构/二分搜索算法.js" working-dir="$PROJECT_DIR$/字节跳动" />
     <configuration name="匿名函数.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="匿名函数.js" working-dir="$PROJECT_DIR$/猫眼" />
     <configuration name="最大升序和.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="最大升序和.js" working-dir="$PROJECT_DIR$/好未来" />
     <configuration name="拆数字串.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="拆数字串.js" working-dir="$PROJECT_DIR$/好未来" />
     <configuration name="排列组合.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="排列组合.js" working-dir="$PROJECT_DIR$/好未来" />
+    <configuration name="js执行顺序.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="js执行顺序.js" working-dir="$PROJECT_DIR$/类" />
     <configuration name="✅nxm矩阵乘法.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/ksyun/✅nxm矩阵乘法.js" working-dir="$PROJECT_DIR$/ksyun" />
     <configuration name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$" />
     <list>
       <item itemvalue="Node.js.BFS推箱子游戏.js" />
       <item itemvalue="Node.js.bin/www" />
-      <item itemvalue="Node.js.青颖飞帆-丑数.js" />
-      <item itemvalue="Node.js.青颖飞帆-sum相等的所有组合.js" />
-      <item itemvalue="Node.js.青颖飞帆-B是否全在A.js" />
+      <item itemvalue="Node.js.js执行顺序.js" />
+      <item itemvalue="Node.js.柯里化.js" />
+      <item itemvalue="Node.js.并集交集差集.js" />
+      <item itemvalue="Node.js.(0,0)到(n,m)所有可能.js" />
       <item itemvalue="Node.js.test.js" />
-      <item itemvalue="Node.js.✅青颖飞帆-超过一半的元素.js" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.test.js" />
-        <item itemvalue="Node.js.✅青颖飞帆-超过一半的元素.js" />
-        <item itemvalue="Node.js.青颖飞帆-B是否全在A.js" />
-        <item itemvalue="Node.js.青颖飞帆-sum相等的所有组合.js" />
-        <item itemvalue="Node.js.青颖飞帆-丑数.js" />
+        <item itemvalue="Node.js.(0,0)到(n,m)所有可能.js" />
+        <item itemvalue="Node.js.并集交集差集.js" />
+        <item itemvalue="Node.js.柯里化.js" />
+        <item itemvalue="Node.js.js执行顺序.js" />
       </list>
     </recent_temporary>
   </component>
@@ -286,15 +266,15 @@
       <workItem from="1535616044314" duration="3009000" />
       <workItem from="1535627446173" duration="12738000" />
       <workItem from="1535739152390" duration="41401000" />
-      <workItem from="1536076122253" duration="9573000" />
+      <workItem from="1536076122253" duration="21515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="348916000" />
+    <option name="totallyTimeSpent" value="360858000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="821" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="826" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
@@ -303,7 +283,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010571" side_tool="true" weight="0.30939227" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4989429" visible="true" weight="0.30248618" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4989429" visible="true" weight="0.30041152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32872927" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -325,46 +305,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/数组/✅洗牌.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ES5&amp;6/✅Promise-setTimeout输出顺序.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/点我达/✅HTML5新特性.html" />
-    <entry file="file://$PROJECT_DIR$/点我达/✅Flex布局.html" />
-    <entry file="file://$PROJECT_DIR$/点我达/test.js" />
-    <entry file="file://$PROJECT_DIR$/点我达/tes2.js" />
-    <entry file="file://$PROJECT_DIR$/数组/合并有序数组.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ES5&amp;6/匿名函数.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ES5&amp;6/ES6类.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Aibee/addLink.html" />
     <entry file="file://$PROJECT_DIR$/地平线/数组.js" />
     <entry file="file://$PROJECT_DIR$/CSS/Flex宽度自适应.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -374,16 +314,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/好未来/拆数字串.js" />
-    <entry file="file://$PROJECT_DIR$/排列组合/全排列.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-151">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/动态规划/最大升序和.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -430,6 +360,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
           <caret line="59" column="29" lean-forward="true" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -468,13 +401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/✅不定高子元素水平垂直居中.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/贪心法/招行卖比特币.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -500,6 +426,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -524,13 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/字符串操作/携程-判断ip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/数组/携程-素数和.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -549,13 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="1" lean-forward="true" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/百度前端技术学院/❗️前中后序二叉树.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1103">
-          <caret line="100" column="31" lean-forward="true" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -608,10 +523,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/字符串操作/青颖飞帆-B是否全在A.js">
+    <entry file="file://$PROJECT_DIR$/排列组合/全排列.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="15">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/数组/子数组和.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/❗jQuery和dom对象不一样.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5/defineProperty数据绑定.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/百度前端技术学院/❗️前中后序二叉树.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="55" column="32" lean-forward="true" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/✅不定高子元素水平垂直居中.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -622,10 +571,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/字符串操作/青颖飞帆-B是否全在A.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/数据结构/哈希表-数组去重.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/字符串操作/0开头默认八进制.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/类.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/字符串操作/携程-判断ip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/类/js执行顺序.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/函数式编程/柯里化.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/数组/并集交集差集.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/动态规划/(0,0)到(n,m)所有可能.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        <state relative-caret-position="90">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
         </state>
       </provider>
     </entry>
